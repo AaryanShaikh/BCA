@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookie!!!</title>
+</head>
+<body onload="checkCookie()">
+	<input type="button" value="delete" onclick="delCookie()">
+	<script type="text/javascript">
+		function createCookie(cookieName,cookieValue,daysToExpire)
+        {
+          var date = new Date();
+          date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));//dd/hh/mm/ss/ms
+          document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toUTCString();
+        }
+		function accessCookie(cookieName)
+        {
+          var name = cookieName + "=";//myCookie=
+          var allCookies = document.cookie.split(';');
+          for(var i=0; i<allCookies.length; i++)
+          {
+            var temp = allCookies[i].trim();
+            //testCookie->myCookie
+	            if (temp.indexOf(name)==0){
+	            	return temp.substring(name.length,temp.length);//e=aaryan->aaryan
+	            }
+       	  }
+        	return "";
+        }
+		function checkCookie()
+        {
+          var user = accessCookie("myCookie");
+          if (user!="")
+        	alert("Welcome Back " + user + "!!!");
+          else
+          {
+            user = prompt("Please enter your name");
+            num = prompt("How many days you want to store your name on your computer?");
+            if (user!="" && num!=null)
+            {
+            createCookie("myCookie", user, num);
+            }
+          }
+        }
+        function delCookie() {
+        	document.cookie = "myCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"
+        	alert("Cookie Deleted!")
+        }
+	</script>
+</body>
+</html>

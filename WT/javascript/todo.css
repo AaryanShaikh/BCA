@@ -1,0 +1,112 @@
+body{
+	background: #333;
+	color: white;
+}
+#center{
+	border: 5px solid white;
+	height: 600px;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+#input{
+	margin-top: 10px;
+	border-radius: 20px;
+	height: 30px;
+	transition: .5s;
+	border: 2px dashed black;
+	outline: none;
+	text-align: center;
+}
+#input:focus{
+	background: #000;
+	color: white;
+	border: 2px dashed white;
+}
+#add{
+	margin-top: 20px;
+	border-radius: 5px 20px;
+	height: 30px;
+	border: none;
+	background: linear-gradient(to right, #f12711, #f5af19,#f5af19,#f12711);
+	background-size: 400%;
+	outline: 0 none;
+	transition: .5s;
+}
+#add:hover{
+	border-radius: 20px 5px;
+	box-shadow: 0 0 10px black;
+	transition: .5s;
+	animation: change 5s linear infinite;
+}
+@keyframes change{
+	0%{
+		background-position: 0%;
+	}
+	100%{
+		background-position: 400%;
+	}
+}
+#rem{
+	margin-top: 20px;
+	border-radius: 5px 20px;
+	height: 30px;
+	border: none;
+	transition: .5s;
+	background: linear-gradient(to right, #f12711, #f5af19,#f5af19,#f12711);
+	background-size: 400%;
+	outline: 0 none;
+}
+#rem:hover{
+	box-shadow: 0 0 10px black;
+	transition: .5s;
+	border-radius: 20px 5px;
+	animation: change 5s linear infinite;
+}
+#remall{
+	margin-top: 20px;
+	border-radius: 5px 20px;
+	height: 30px;
+	border: none;
+	transition: .5s;
+	background: linear-gradient(to right, #f12711, #f5af19,#f5af19,#f12711);
+	background-size: 400%;
+	outline: 0 none;
+}
+#remall:hover{
+	box-shadow: 0 0 10px black;
+	transition: .5s;
+	border-radius: 20px 5px;
+	animation: change 5s linear infinite;
+}
+input[type="checkbox"]{
+	position: relative;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	-webkit-appearance:none;
+	outline: none;
+	transition: .5s;
+}
+input[type="checkbox"]{
+	-webkit-appearance: none;
+	border: 5px solid white;
+	height: 40px;
+	width: 40px;
+	transition: .5s;
+	outline: none;
+}
+input[type="checkbox"]:checked{
+	-webkit-appearance: none;
+	border: 5px solid lime;
+	height: 40px;
+	width: 20px;
+	transition: .5s;
+	outline: none;	
+	border-top: 5px solid transparent;
+	border-left: 5px solid transparent;
+	transform: rotate(400deg);
+}
+li{
+	list-style: none;
+}
