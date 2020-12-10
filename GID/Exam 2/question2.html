@@ -1,0 +1,25 @@
+<html>
+<script>
+function cal()
+{
+var n1=document.q2.fno.value;
+var n2=document.q2.sno.value;
+var n3=document.q2.tno.value;
+var cal=(Number(n1)+Number(n2)+Number(n3))/3;
+document.q2.res.value=cal;
+}
+</script>
+<body>
+<form name=q2>
+Enter the first number:
+<input type="number" name="fno"><br>
+Enter the Second number:
+<input type="number" name="sno"><br>
+Enter the Third number:
+<input type="number" name="tno"><br>
+Result:
+<input type="number" name="res"><br>
+<input type="button" value="calculate" onclick="cal()">
+</form>
+</body>
+</html>
