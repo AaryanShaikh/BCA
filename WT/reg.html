@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+<body>
+	<script>
+		function show()
+		{
+			var pass=document.getElementById('pass');
+			if(document.getElementById('check').checked)
+			{
+				document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/show.png";
+				pass.setAttribute('type','text');
+			}
+			else
+			{
+				document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/pass.png";
+				pass.setAttribute('type','password');
+			}
+		}
+	</script>
+	<center>
+		<div id="main">
+			<img src="D:/My Docs/BCA/SEM-V/wt/stock/normal.png" id="d1" height=200px width=200px>
+			<div id="text">
+			<h1>Registration</h1>
+			</div>
+<form method="post" action="log.html">
+	<input type="text" name="name" placeholder="Name" oninput='document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/happy.png"' autocomplete="off">
+	<br>
+	<input type="text" name="email" placeholder="Email" oninput='document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/happy.png"' autocomplete="off"><br>
+	<input type="password" name="pass" id="pass" placeholder="Password" oninput='document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/pass.png"' autocomplete="off"><br><br>
+	<label><input type="checkbox" id="check" onclick='show()'>&nbsp Show Password</label>
+	<br><br>
+	Events:
+	<select>
+		<option value="omni">Omni-Present</option>
+		<option value="ice">Ice Breaker</option>
+		<option value="android">Android Techie</option>
+		<option value="brain">Brainiac's</option>
+		<option value="build">Build It</option>
+		<option value="high">Highlights</option>
+		<option value="snap">Snap it Out</option>
+		<option value="slow">Slow Shutter</option>
+		<option value="battle">Battlezone</option>
+		<option value="troll">Troll World</option>
+		<option value="shop">Shopper's Stop</option>
+		<option value="tag">Tagged</option>
+		<option value="hunt">Treasure Hunt</option>
+	</select>
+	<br><br><input type="submit" value="Register!">
+</form>
+<form method="post" action="log.html">
+	<br><input type="submit" value="Login!">
+</form>
+</div>
+</center>
+</body>
+</html>

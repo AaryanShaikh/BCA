@@ -1,0 +1,677 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: consolas;
+	overflow-x: hidden;
+}
+input[type="checkbox"]{
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	width: 50px;
+	height: 50px;
+	z-index: 100000;
+	cursor: pointer;
+	opacity: 0;
+}
+.icon{
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	width: 50px;
+	height: 50px;
+	z-index: 100001;
+	background: #000000;
+	pointer-events: none;
+}
+.icon:before{
+	content: 'hide';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+input[type="checkbox"]:checked ~ .icon:before{
+	content: 'menu';
+}
+input[type="checkbox"]:checked ~ ul{
+	left: -300px;
+}
+ul{
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	width: 300px;
+	height: 100vh;
+	background: #000000;
+	transition: 0.5s;
+	z-index: 100000;
+	overflow-y: auto;
+}
+ul li{
+	list-style: none;
+}
+ul li a{
+	display: block;
+	color: #ffffff;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 700;
+	transition: 0.5s; 
+}
+ul li a:hover{
+	transform: translateX(10px);
+	color: #ffff00;
+}
+section{
+	position: relative;
+	left: 300px;
+	padding: 100px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ section{
+	left: 0;
+}
+section h2{
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+}
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+#rcorners3 {
+  border-radius: 25px;
+  background: url(gif10.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
+  color: white;  
+}
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 10%;
+}
+#norrot {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#myDiv {
+  transform: rotate(20deg);
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#nortra{
+	 width: 300px;
+	 height: 100px;
+	 background-color: yellow;
+     border: 1px solid black;
+     transform: translate(50px,100px);
+}
+#scale {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);
+}
+#scaleX {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleX(2);
+}
+#scaleY {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleY(3);
+}
+#norske {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#skew {
+  transform: skew(20deg,10deg);
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#norskeX {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#skewX {
+  transform: skewX(20deg);
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#norskeY {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#skewY {
+  transform: skewY(20deg);
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#normat {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#normal {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#matrix {transform: matrix(1, 0, 0.5, 1, 150, 0);
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+#matrix2 {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+#normat {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#rotateX {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: rotateX(150deg);
+}
+#norrotY {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#rotateY {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: rotateX(150deg);
+}
+#norrotZ {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+#rotateZ{
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: rotateZ(90deg);
+}
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /*animation: example 5s linear 2s infinite alternate; Shorthand*/
+}
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+body {
+  background-color: pink;
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+.flex-container > #num {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container2 {
+  display: flex;
+  background-color: DodgerBlue;
+}
+.flex-container2 > #num2 {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.flex-container3 {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+.flex-container3 > #num3 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container4 {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: DodgerBlue;
+}
+.flex-container4 > #num4 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container5 {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+}
+.flex-container5 > #num5 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container6 {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: DodgerBlue;
+}
+.flex-container6 > #num6 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container7 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+.flex-container7 > #num7 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container8 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: DodgerBlue;
+}
+.flex-container8 > #num8 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container9 {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: DodgerBlue;
+}
+.flex-container9 > #num9 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container10 {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+}
+.flex-container10 > #num10 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container11 {
+  display: flex;
+  justify-content: flex-start;
+  background-color: DodgerBlue;
+}
+.flex-container11 > #num11 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container12 {
+  display: flex;
+  justify-content: flex-end;
+  background-color: DodgerBlue;
+}
+.flex-container12 > #num12 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container13 {
+  display: flex;
+  justify-content: space-around;
+  background-color: DodgerBlue;
+}
+.flex-container13 > #num13 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container14 {
+  display: flex;
+  justify-content: space-between;
+  background-color: DodgerBlue;
+}
+.flex-container14 > #num14 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container15 {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+.flex-container15 > #num15 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container16 {
+  display: flex;
+  height: 200px;
+  align-items: flex-start;
+  background-color: DodgerBlue;
+}
+.flex-container16 > #num16 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container17 {
+  display: flex;
+  height: 200px;
+  align-items: flex-end;
+  background-color: DodgerBlue;
+}
+.flex-container17 > #num17 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container18 {
+  display: flex;
+  height: 200px;
+  align-items: stretch;
+  background-color: DodgerBlue;
+}
+.flex-container18 > #num18 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container19 {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: DodgerBlue;
+}
+.flex-container19 > #num19 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container20 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: DodgerBlue;
+}
+.flex-container20 > #num20 {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: DodgerBlue;
+}
+.flex-container21 > #num21 {
+  background-color: #f1f1f1;
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+.flex-container22 {
+  display: flex;
+  background-color: #f1f1f1;
+}
+.flex-container22 > #num22 {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container23 {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+.flex-container23 > #num23 {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container24 {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+}
+.flex-container24 > #num24 {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+#resize {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+.ex1 {
+  margin: 20px;
+  border: 1px solid black;
+  outline: 4px solid red;
+  outline-offset: 15px;
+} 
+.ex2 {
+  margin: 10px;
+  border: 1px solid black;
+  outline: 5px dashed blue;
+  outline-offset: 5px;
+}
+#img {
+  border-radius: 8px;
+}
+#img2 {
+  border-radius: 50%;
+}
+#img3 {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+#img4 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+#img4:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+#img5 {
+  max-width: 100%;
+  height: auto;
+}
+#img6 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#body {margin:25px;}
+.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.container {
+  text-align: center;
+  padding: 10px 20px;
+} 

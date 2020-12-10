@@ -1,0 +1,34 @@
+body{
+	background: #333;
+}
+#main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#circle{
+	border: 1px solid white;
+	height: 140px;
+	width: 140px;
+	border-radius: 100%;
+	background: white;
+}
+#bar1{
+	border: 1px solid white;
+	height: 190px;
+	width: 45px;
+	margin-top: -250px;
+	margin-left: 95px;
+	border-radius: 25px;	
+	background: white;
+}
+#bar2{
+	border: 1px solid white;
+	height: 100px;
+	width: 45px;
+	margin-top: -219px;
+	margin-left: 150px;
+	transform: rotate(90deg);
+	background: white;	
+}

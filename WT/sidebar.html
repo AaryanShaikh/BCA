@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sidebar</title>
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+</head>
+<body>
+	<input type="checkbox" name="">
+	<span class="icon"></span>
+	<ul>
+		<li><a href="#roundCorners">Rounded Corners</a></li>
+		<li><a href="#borderImg">Border Images</a></li>
+		<li><a href="#2d">2D Transforms</a></li>
+		<li><a href="#3d">3D Transforms</a></li>
+		<li><a href="#animate">Animations</a></li>
+		<li><a href="#mediaQ">Media Queries</a></li>
+		<li><a href="#flexbox">Flex Boxes</a></li>
+		<li><a href="#ui">User Interface</a></li>
+		<li><a href="#styleimg">Style Images</a></li>
+	</ul>
+	<section id="roundCorners">
+		<h1>The border-radius Property</h1>
+		<p>Rounded corners for an element with a specified background color:</p>
+		<p id="rcorners1">Rounded corners!</p>
+		<p>Rounded corners for an element with a border:</p>
+		<p id="rcorners2">Rounded corners!</p>
+		<p>Rounded corners for an element with a background image:</p>
+		<p id="rcorners3">Rounded corners!</p>
+	</section>
+	<section id="borderImg">
+		<h1>The border-image Property</h1>
+		<p>Here, the middle sections of the image are repeated to create the border:</p>
+		<p id="borderimg">border-image: url(border.png) 30 round;</p>
+		<p>Here is the original image:</p><img src="border.png" height="100px" width="100px">
+		<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+	</section>
+	<section id="2d">
+		<h1>The rotate() Method</h1>
+		<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+		<div id="normal">
+		This a normal div element.
+		</div>
+		<div id="myDiv">
+		This div element is rotated clockwise 20 degrees.
+		</div>
+		<br><br>
+		<h1>The translate() Method</h1>
+		<p>The translate() method moves an element from its current position:</p>
+		<div id="nortra">
+		This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+		</div>
+		<br><br><br><br><br>
+		<h1>The scale() Method</h1>
+		<p>The scale() method increases or decreases the size of an element.</p>
+		<div id="scale">
+		This div element is two times of its original width, and three times of its original height.
+		</div>
+		<h1>The scaleX() Method</h1>
+		<p>The scaleX() method increases or decreases the width of an element.</p>
+		<div id="scaleX">
+		This div element is two times of its original width.
+		</div>
+		<h1>The scaleY() Method</h1>
+		<p>The scaleY() method increases or decreases the height of an element.</p>
+		<div id="scaleY">
+		This div element is three times of its original height.
+		</div>
+		<h1>The skew() Method</h1>
+		<p>The skew() method skews an element into a given angle.</p>
+		<div id="norske">
+		This a normal div element.
+		</div>
+		<div id="skew">
+		This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+		</div>
+		<h1>The skewX() Method</h1>
+		<p>The skewX() method skews an element along the X-axis by the given angle.</p>
+		<div id="norskeX">
+		This a normal div element.
+		</div>
+		<div id="skewX">
+		This div element is skewed 20 degrees along the X-axis.
+		</div>
+		<h1>The skewY() Method</h1>
+		<p>The skewY() method skews an element along the Y-axis by the given angle.</p>
+		<div id="norskeY">
+		This a normal div element.
+		</div>
+		<div id="skewY">
+		This div element is skewed 20 degrees along the Y-axis.
+		</div>
+		<br>
+		<h1>The matrix() Method</h1>
+		<p>The matrix() method combines all the 2D transform methods into one.</p>
+		<div id="normat">
+		This a normal div element.
+		</div>
+		<div id="matrix">
+		Using the matrix() method.
+		</div>
+		<div id="matrix2">
+		Another use of the matrix() method.
+		</div>
+	</section>
+	<section id="3d">
+		<h1>The rotateX() Method</h1>
+		<p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
+		<div id="norrotX">
+		This a normal div element.
+		</div>
+		<div id="rotateX">
+		This div element is rotated 150 degrees.
+		</div>
+		<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateX() method.</p>
+		<h1>The rotateY() Method</h1>
+		<p>The rotateY() method rotates an element around its Y-axis at a given degree.</p>
+		<div id="norrotY">
+		This a normal div element.
+		</div>
+		<div id="rotateY">
+		This div element is rotated 150 degrees.
+		</div>
+		<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateY() method.</p>
+		<h1>The rotateZ() Method</h1>
+		<p>The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
+		<div id="norrotZ">
+		This a normal div element.
+		</div>
+		<div id="">
+		This div element is rotated 90 degrees.
+		</div>
+		<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateZ() method.</p>
+	</section>
+	<section id="animate">
+		<h2>Animations</h2>
+		<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+		<div id="box"></div>
+	</section>
+	<section id="mediaQ">
+		<h2>Media Queries</h2>
+		<h1>Resize the browser window to see the effect!</h1>
+		<p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+	</section>
+	<section id="flexbox">
+		<h1>Flexible Boxes</h1>
+		<div class="flex-container">
+		  <div id="num">1</div>
+		  <div id="num">2</div>
+		  <div id="num">3</div>  
+		  <div id="num">4</div>
+		  <div id="num">5</div>
+		  <div id="num">6</div>  
+		  <div id="num">7</div>
+		  <div id="num">8</div>
+		</div>
+		<p>Try to resize the browser window.</p>
+		<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+		<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+		<br><br><br>
+		<div class="flex-container2">
+		  <div id="num2">1</div>
+		  <div id="num2">2</div>
+		  <div id="num2">3</div>  
+		</div>
+		<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+		<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+		<br><br><br>
+		<h1>The flex-direction Property</h1>
+		<p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+		<div class="flex-container3">
+		  <div id="num3">1</div>
+		  <div id="num3">2</div>
+		  <div id="num3">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The flex-direction Property</h1>
+		<p>The "flex-direction: column-reverse;" stacks the flex items vertically (but from bottom to top):</p>
+		<div class="flex-container4">
+		  <div id="num4">1</div>
+		  <div id="num4">2</div>
+		  <div id="num4">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The flex-direction Property</h1>
+		<p>The "flex-direction: row;" stacks the flex items horizontally (from left to right):</p>
+		<div class="flex-container5">
+		  <div id="num5">1</div>
+		  <div id="num5">2</div>
+		  <div id="num5">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The flex-direction Property</h1>
+		<p>The "flex-direction: row-reverse;" stacks the flex items horizontally (but from right to left):</p>
+		<div class="flex-container6">
+		  <div id="num6">1</div>
+		  <div id="num6">2</div>
+		  <div id="num6">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The flex-wrap Property</h1>
+		<p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+		<div class="flex-container7">
+		  <div id="num7">1</div>
+		  <div id="num7">2</div>
+		  <div id="num7">3</div>  
+		  <div id="num7">4</div>
+		  <div id="num7">5</div>
+		  <div id="num7">6</div>  
+		  <div id="num7">7</div>
+		  <div id="num7">8</div>
+		  <div id="num7">9</div>  
+		  <div id="num7">10</div>
+		  <div id="num7">11</div>
+		  <div id="num7">12</div>  
+		</div>
+		<p>Try resizing the browser window.</p>
+		<br><br><br>
+		<h1>The flex-wrap Property</h1>
+		<p>The "flex-wrap: wrap-reverse;" specifies that the flex items will wrap if necessary, in reverse order:</p>
+		<div class="flex-container8">
+		  <div id="num8">1</div>
+		  <div id="num8">2</div>
+		  <div id="num8">3</div>  
+		  <div id="num8">4</div>
+		  <div id="num8">5</div>
+		  <div id="num8">6</div>  
+		  <div id="num8">7</div>
+		  <div id="num8">8</div>
+		  <div id="num8">9</div>  
+		  <div id="num8">10</div>
+		  <div id="num8">11</div>
+		  <div id="num8">12</div>  
+		</div>
+		<p>Try resizing the browser window.</p>
+		<br><br><br>
+		<h1>The flex-flow Property</h1>
+		<p>The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.</p>
+		<div class="flex-container9">
+		  <div id="num9">1</div>
+		  <div id="num9">2</div>
+		  <div id="num9">3</div>  
+		  <div id="num9">4</div>
+		  <div id="num9">5</div>
+		  <div id="num9">6</div>  
+		</div>
+		<p>Try resizing the browser window.</p>
+		<br><br><br>
+		<h1>The justify-content Property</h1>
+		<p>The "justify-content: center;" aligns the flex items at the center of the container:</p>
+		<div class="flex-container10">
+		  <div id="num10">1</div>
+		  <div id="num10">2</div>
+		  <div id="num10">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The justify-content Property</h1>
+		<p>The "justify-content: flex-start;" aligns the flex items at the beginning of the container (this is default):</p>
+		<div class="flex-container11">
+		  <div id="num11">1</div>
+		  <div id="num11">2</div>
+		  <div id="num11">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The justify-content Property</h1>
+		<p>The "justify-content: flex-end;" aligns the flex items at the end of the container:</p>
+		<div class="flex-container12">
+		  <div id="num12">1</div>
+		  <div id="num12">2</div>
+		  <div id="num12">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The justify-content Property</h1>
+		<p>The "justify-content: space-around;" displays the flex items with space before, between, and after the lines:</p>
+		<div class="flex-container13">
+		  <div id="num13">1</div>
+		  <div id="num13">2</div>
+		  <div id="num13">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The justify-content Property</h1>
+		<p>The "justify-content: space-between;" displays the flex items with space between the lines:</p>
+		<div class="flex-container14">
+		  <div id="num14">1</div>
+		  <div id="num14">2</div>
+		  <div id="num14">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The align-items Property</h1>
+		<p>The "align-items: center;" aligns the flex items in the middle of the container:</p>
+		<div class="flex-container15">
+		  <div id="num15">1</div>
+		  <div id="num15">2</div>
+		  <div id="num15">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The align-items Property</h1>
+		<p>The "align-items: flex-start;" aligns the flex items at the top of the container:</p>
+		<div class="flex-container16">
+		  <div id="num16">1</div>
+		  <div id="num16">2</div>
+		  <div id="num16">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The align-items Property</h1>
+		<p>The "align-items: flex-end;" aligns the flex items at the bottom of the container:</p>
+		<div class="flex-container17">
+		  <div id="num17">1</div>
+		  <div id="num17">2</div>
+		  <div id="num17">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The align-items Property</h1>
+		<p>The "align-items: stretch;" stretches the flex items to fill the container (this is default):</p>
+		<div class="flex-container18">
+		  <div id="num18">1</div>
+		  <div id="num18">2</div>
+		  <div id="num18">3</div>  
+		</div>
+		<br><br><br>
+		<h1>The align-items Property</h1>
+		<p>The "align-items: baseline;" aligns the flex items such as their baselines aligns:</p>
+		<div class="flex-container19">
+		  <div id="num19"><h1>1</h1></div>
+		  <div id="num19"><h6>2</h6></div>
+		  <div id="num19"><h3>3</h3></div>  
+  		  <div id="num19"><small>4</small></div> 
+		</div>
+		<br><br><br>
+		<h1>The align-content Property</h1>
+		<p>The "align-content: space-between;" displays the flex lines with equal space between them:</p>
+		<div class="flex-container20">
+		  <div id="num20">1</div>
+		  <div id="num20">2</div>
+		  <div id="num20">3</div>  
+		  <div id="num20">4</div>
+		  <div id="num20">5</div>
+		</div>
+		<br><br><br>
+		<h1>Perfect Centering</h1>
+		<p>A container with both the justify-content and the align-items properties set to <em>center</em> will align the item(s) in the center (in both axis).</p>
+		<div class="flex-container21">
+		  <div id="num21"></div>
+		</div>
+		<br><br><br>
+		<h1>Flexible Items</h1>
+		<div class="flex-container22">
+		  <div id="num22">1</div>
+		  <div id="num22">2</div>
+		  <div id="num22">3</div> 
+		  <div id="num22">4</div>
+		</div>
+		<p>All direct children of a flexible container becomes flexible items.</p>
+		<br><br><br>
+		<h1>The order Property</h1>
+		<p>Use the order property to sort the flex items as you like:</p>
+		<div class="flex-container23">
+		  <div style="order: 3" id="num23">1</div>
+		  <div style="order: 2" id="num23">2</div>
+		  <div style="order: 4" id="num23">3</div> 
+		  <div style="order: 1" id="num23">4</div>
+		</div>
+		<br><br><br>
+		<h1>The order Property</h1>
+		<p>Make the third flex item grow eight times faster than the other flex items:</p>
+		<div class="flex-container23">
+		  <div style="flex-grow: 1" id="num23">1</div>
+		  <div id="num23">2</div>
+		  <div style="flex-grow: 8" id="num23">3</div> 
+		</div>
+		<br><br><br>
+		<h1>The align-self Property</h1>
+		<p>The "align-self: center;" aligns the selected flex item in the middle of the container:</p>
+		<div class="flex-container24">
+		  <div id="num24">1</div>
+		  <div id="num24">2</div>
+		  <div id="num24" style="align-self: center">3</div>
+		  <div id="num24">4</div>
+		</div>
+		<p>The align-self property overrides the align-items property of the container.</p>
+		<h1>The align-self Property</h1>
+		<p>The "align-self: flex-start;" aligns the selected flex item at the top of the container.</p>
+		<p>The "align-self: flex-end;" aligns the selected flex item at the bottom of the container.</p>
+		<div class="flex-container24">
+		  <div id="num24">1</div>
+		  <div id="num24" style="align-self: flex-start">2</div>
+		  <div id="num24" style="align-self: flex-end">3</div>
+		  <div id="num24">4</div>
+		</div>
+		<p>The align-self property overrides the align-items property of the container.</p>
+	</section>
+	<section id="ui">
+		<h1>The resize Property</h1>
+		<div id="resize">
+		  <p>Let the user resize both the height and the width of this div element.</p>
+		  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+		</div>
+		<p><b>Note:</b> Internet Explorer does not support the resize property.</p>
+		<br><br><br>
+		<h1>The outline-offset Property</h1>
+		<div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+		<br>
+		<div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+	</section>
+	<section id="styleimg">
+		<h2>Rounded Images</h2>
+		<p>Use the border-radius property to create rounded images:</p>
+		<img src="img.png" alt="Paris" width="300" height="300" id="img">
+		<img src="img.png" alt="Paris" width="300" height="300" id="img2">
+		<br><br><br>
+		<h2>Thumbnail Images</h2>
+		<p>Use the border property to create thumbnail images:</p>
+		<img src="img.png" alt="Paris" style="width:150px" id="img3">
+		<br><br><br>
+		<h2>Thumbnail Image as Link</h2>
+		<p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+		<p>Hover over the image and click on it to see the effect.</p>
+		<a target="_blank" href="img.png">
+		<img src="img.png" alt="Paris" style="width:150px" id="img4"></a>
+		<br><br><br>
+		<h2>Responsive Images</h2>
+		<p>Responsive images will automatically adjust to fit the size of the screen.</p>
+		<p>Resize the browser window to see the effect:</p>
+		<img src="img.png" alt="Cinque Terre" width="1000" height="300" id="img5">
+		<br><br><br>
+		<h2>Center an Image</h2>
+		<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+		<img src="img.png" alt="Paris" style="width:50%" id="img6">
+		<br><br><br>
+		<div id="body">
+		<h2>Responsive Polaroid Images / Cards</h2>
+		<div class="polaroid">
+		  <img src="img.png" alt="5 Terre" style="width:100%">
+		  <div class="container">
+		  <p>Cinque Terre</p>
+		  </div>
+		</div>
+		<div class="polaroid">
+		  <img src="img.png" alt="Norther Lights" style="width:100%">
+		  <div class="container">
+		  <p>Northern Lights</p>
+		  </div>
+		</div>
+		</div>
+	</section>
+</body>
+</html>

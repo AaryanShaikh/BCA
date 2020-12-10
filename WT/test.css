@@ -1,0 +1,26 @@
+body{
+	background: #333;
+}
+table{
+	width: 100%;
+	height: 640px;
+	border: none;
+}
+td{
+	transition: 5s;
+	background: linear-gradient(90deg,#FEAC5E,#C779D0,#4BC0C8,#4BC0C8,#C779D0,#FEAC5E);
+	background-size: 400%;
+	box-shadow: 0 0 10px aquamarine;
+	opacity: 0;
+	animation: doit 3s linear infinite;
+}
+@keyframes doit{
+	50%{
+		transform: rotate(360deg);
+		background-position: 400%;
+	}
+}
+td:hover{	
+	transition: .1s;
+	opacity: 1;
+}

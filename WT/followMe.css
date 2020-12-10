@@ -1,0 +1,16 @@
+body{
+	background: #333;
+}
+table{
+	width: 100%;
+	height: 600px;
+	border: none;
+}
+td{
+	transition: .2s;
+}
+td:hover{
+	transition: .2s;	
+	background: aqua;
+	box-shadow: 0 0 10px aqua,0 0 20px aqua;
+}

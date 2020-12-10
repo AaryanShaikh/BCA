@@ -1,0 +1,96 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.zoom{
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	overflow: hidden;
+	background: url('D:/My Docs/BCA/SEM-V/wt/stock/bg.jpg');
+	background-size: cover;
+
+}
+.zoom:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	z-index: 1000;
+	background: linear-gradient(transparent, #ffffff);
+}
+.zoom #layer1{
+	width: 100%;
+	position: absolute;
+	left: 40%;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+.zoom #layer2{
+	width: 100%;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+}
+.zoom #text{
+	width: 100%;
+	position: absolute;
+	right: 0;
+	transform: translateY(50%);
+}
+.content{
+	padding: 100px;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+.content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 4em;
+} 
+.content p{
+	font-size: 1.2em;
+}
+h2{
+	color: transparent;
+	text-transform: uppercase;
+}
+h2 span:nth-child(1){
+	position: absolute;
+	left: 100px;
+	color: #000;
+	transition: .5s;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+	overflow: hidden;
+}
+h2:hover span:nth-child(1){
+	transform: translateY(-18px);
+}
+h2 span:nth-child(2){
+	position: absolute;
+	left: 100px;
+	color: #000;
+	transition: .5s;
+	clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+	overflow: hidden;
+}
+h2:hover span:nth-child(2){
+	transform: translateY(18px);
+}
+h2 span:nth-child(3){
+	position: absolute;
+	left: 114px;
+	transform: translateY(90%) scaleY(0);
+	color: #000;
+	background: #ff0;
+	width: 405px;
+	font-size: 0.35em;
+	text-align: center;
+	font-weight: 900;
+	letter-spacing: 0.2em;
+	transition: .5s;
+}
+h2:hover span:nth-child(3){
+	transform: translateY(90%) scaleY(1);
+}

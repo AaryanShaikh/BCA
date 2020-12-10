@@ -1,0 +1,109 @@
+body{
+	background-image:url('D:/My Docs/BCA/SEM-V/wt/stock/back.png');
+	background-size: cover;
+}
+#main{
+	display: block;
+	background-image:url('D:/My Docs/BCA/SEM-V/wt/stock/GIFs/l45qjRY.gif');
+	background-size: cover;
+	width: 30%;
+	height: 670px;
+	margin-top: 30px; 
+	box-shadow: 1px 10px 40px black;
+	color: #f6ffff;
+	border:none; 
+}
+input[type=submit]{
+border-radius: 50px;
+border: 3px solid #ffffff;
+height: 40px;
+width: 200px;
+background:none;
+transition: .5s linear;
+color: #ffffff;
+font-family: Equestria;
+font-size: 25px;
+}
+input[type=submit]:hover{
+background:linear-gradient(90deg, #01ffff, #0107b1, #ffeb3b, #6fde17);
+background-size: 400%; 
+color: #000000;
+transition: .5s linear;	
+border: 3px solid #26a0da;
+cursor: wait;
+font-family: Equestria;
+font-size: 25px;
+}
+form{
+	color: #ffffff;
+	font-family: Montez;
+	font-size: 25px;
+}
+input[type=text],input[type=password]{
+margin-top: 20px;
+transition: .5s ease-in;
+background: none;
+border: none;
+height: 30px; 
+color: #ffffff;
+border-radius: 24px;
+text-align: center;
+border:2px solid #ffffff;
+outline: none;
+}
+::placeholder{
+	color: #ffffff;
+	font-family: Montez;
+font-size: 25px;
+}
+input[type=text]:focus{
+	transition: .5s ease-in;
+	border-color: #2ecc71;
+	width: 250px;
+}
+input[type=password]:focus{
+	transition: .5s ease-in;
+	border-color: #2ecc71;
+	width: 200px;
+}
+#text h1{
+color: rgba(225, 225, 225, .1);
+font-family: BatmanForeverAlternate;
+font-size: 50px;
+text-transform: uppercase;
+font-weight: bold;
+background-image:url('D:/My Docs/BCA/SEM-V/wt/stock/GIFs/gif.gif');
+-webkit-background-clip: text;
+background-position: 0;
+text-shadow: 5px 5px 10px black;
+}
+input[type="checkbox"]{
+	position: relative;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	-webkit-appearance:none;
+	outline: none;
+	transition: .5s;
+}
+input[type="checkbox"]:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 4px solid #ffffff;
+	box-sizing: border-box;
+	transition: .5s;
+}
+input:checked[type="checkbox"]:before{
+	border-left: none;
+	border-top: none;
+	width: 20px;
+	border-color: #00ff00;
+	transform: rotate(45deg);
+}
+label{
+	font-size: 36px;
+}

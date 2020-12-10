@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="website.css">
+</head>
+<body>
+	<section class="zoom">
+		<img src="D:/My Docs/BCA/SEM-V/wt/stock/mountain1.png" id="layer1">
+		<img src="D:/My Docs/BCA/SEM-V/wt/stock/mountain2.png" id="layer2">
+		<img src="D:/My Docs/BCA/SEM-V/wt/stock/text2.png" id="text">
+	</section>
+	<section class="content">
+		<h2>Introduction
+		<span>Introduction</span>
+		<span>Introduction</span>
+		<span>why I created it....</span>
+		</h2>
+		<p>I created this website just for fun, to see how many elements I can add in one HTML and 
+		how many or how much CSS can I implement in a webpage. The Page will undergo changes or modifications will be done when i feel like I have to add something or I have missed out something important.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	</section>
+	<script type="text/javascript">
+		alert("Scroll down to proceed!")
+		var layer1 = document.getElementById('layer1')
+		scroll = window.pageYOffset;
+		document.addEventListener('scroll',
+			function (e) {
+				var offset = window.pageYOffset;
+				scroll = offset;
+				layer1.style.width = (100 + scroll/5) + '%';
+			});
+		var layer2 = document.getElementById('layer2')
+		scroll = window.pageYOffset;
+		document.addEventListener('scroll',
+			function (e) {
+				var offset = window.pageYOffset;
+				scroll = offset;
+				layer2.style.width = (100 + scroll/5) + '%';
+				layer2.style.left = scroll/50 + '%';
+			});
+		var text = document.getElementById('text')
+		scroll = window.pageYOffset;
+		document.addEventListener('scroll',
+			function (e) {
+				var offset = window.pageYOffset;
+				scroll = offset;
+				layer2.style.width = (100 + scroll/5) + '%';
+				text.style.top = - scroll/20 + '%';
+			});
+	</script>
+	
+</body>
+</html>

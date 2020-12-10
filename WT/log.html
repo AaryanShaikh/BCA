@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>website</title>
+	<link rel="stylesheet" type="text/css" href="log.css">
+</head>
+<body>
+	<script>
+		function show()
+		{
+			var pass=document.getElementById('pass');
+			if(document.getElementById('check').checked)
+			{
+				document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/regshow.png";
+				pass.setAttribute('type','text');
+			}
+			else
+			{
+				document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/regpass.png";
+				pass.setAttribute('type','password');
+			}
+		}	
+	</script>
+	<center>
+		<div id="main">
+			<img src="D:/My Docs/BCA/SEM-V/wt/stock/regnormal.png" id="d1" height=200px width=200px>
+			<br>
+			<div id="text">
+				<h1>Login</h1>
+			</div>
+<form method="post" action="website.html">
+	<input type="text" name="email" placeholder="Email" oninput='document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/reghappy.png"' autocomplete="off"><br>
+	<input type="password" name="pass" id="pass" placeholder="Password" oninput='document.getElementById("d1").src="D:/My Docs/BCA/SEM-V/wt/stock/regpass.png"' autocomplete="off"><br><br>
+	<input type="checkbox" id="check" onclick='show()'>Show Password
+	<br><br><input type="submit" value="Login!">
+</form>
+<form method="post" action="reg.html">
+	<br><input type="submit" value="Register!">
+</form>
+</div>
+</center>
+</body>
+</html>

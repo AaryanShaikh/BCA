@@ -1,0 +1,43 @@
+body{
+	background: #333;
+}
+#main{
+	border: 50px solid white;
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+	border-top: 50px solid red;
+	border-left: 50px solid yellow;
+	border-bottom: 50px solid green;
+	border-right: 50px solid blue;
+	animation: doit 5s linear infinite;
+}
+@keyframes doit{
+	0%{
+		transform: scaleX(1);
+	}
+	50%{
+		transform: scaleX(-1);
+	}
+	80%{
+		transform: scaleX(0);	
+	}
+	100%{
+		transform: scaleX(1);	
+	}
+}
+#divider{
+	border: 25px solid blue;
+	width: 100px;
+	margin-top: 120px;
+	margin-left: 150px;
+}
+#deleter{
+	border: 140px solid white;
+	margin-top: -330px;
+	margin-left: 180px;
+	border-top: 140px solid transparent;
+	border-left: 140px solid transparent;
+	border-right: 140px solid transparent;
+	border-bottom: 140px solid #333;
+}

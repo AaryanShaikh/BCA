@@ -1,0 +1,30 @@
+body{
+	background: #333;
+	color: white;
+}
+#center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+}
+input[type="checkbox"]{
+	-webkit-appearance: none;
+	border: 5px solid white;
+	height: 40px;
+	width: 40px;
+	transition: .5s;
+	outline: none;
+}
+input[type="checkbox"]:checked{
+	-webkit-appearance: none;
+	border: 5px solid lime;
+	height: 40px;
+	width: 20px;
+	transition: .5s;
+	outline: none;	
+	border-top: 5px solid transparent;
+	border-left: 5px solid transparent;
+	transform: rotate(400deg);
+}

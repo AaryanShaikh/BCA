@@ -1,0 +1,52 @@
+#one{
+	border: 20px solid black;
+	height: 100px;
+	width: 100px;
+	border-top-color: white;
+}
+#two{
+	border: 20px solid black;
+	height: 100px;
+	width: 100px;
+	margin-top: -20px;
+	border-left-color: white; 
+}
+#three{
+	border: 20px solid black;
+	height: 100px;
+	width: 100px;
+	margin-left: 120px;
+	margin-top: -260px;
+	border-right-color: white;	
+}
+#four{
+	border: 20px solid black;
+	height: 100px;
+	width: 100px;
+	margin-left: 120px;
+	margin-top: -20px;
+	border-bottom-color: white;
+}
+#box1{
+	height: 20px;
+	width: 20px;
+	background: #000;
+	margin-top: -140px;
+}
+#box2{
+	height: 20px;
+	width: 20px;
+	background: black;
+	margin-top: 100px;
+	margin-left: 120px;
+}
+#circle{
+	height: 30px;
+	width: 30px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 100%;
+	background: #000;
+}

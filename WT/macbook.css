@@ -1,0 +1,81 @@
+#main{
+	border: 10px solid black;
+	height: 200px;
+	width: 250px;
+	border-radius: 15px;
+	margin-left: 50px;
+}
+#screen{
+	border: 1px solid black;
+	height: 170px;
+	width: 220px;
+	background: black;
+	margin-top: 13px;
+	margin-left: 13px;
+}
+#keyboard{
+	border: 1px solid black;
+	width: 330px;
+	margin-left: 15px;
+	height: 16px;
+	background: black;
+	border-radius: 25px;
+	margin-top: -15px; 
+}
+#divider{
+	border: 1px solid white;
+	width: 330px;
+	margin-left: 15px;
+	height: 11px;
+	background: white;
+	margin-top: -30px; 
+}
+#switch{
+	border: 1px solid white;
+	width: 70px;
+	margin-left: 150px;
+	height: 11px;
+	background: white;
+	margin-top: -4px;
+	border-radius: 20px 	
+}
+#reflect1{
+	border: 1px solid white;
+	width: 20px;
+	margin-left: 10px;
+	height: 11px;
+	background: white;
+	margin-top: 14px;
+	border-radius: 20px;
+	transform: rotate(40deg);	
+}
+#reflect2{
+	border: 1px solid white;
+	width: 80px;
+	margin-left: 32px;
+	height: 11px;
+	background: white;
+	margin-top: 32px;
+	border-radius: 20px;
+	transform: rotate(40deg);	
+}
+#reflect3{
+	border: 1px solid white;
+	width: 80px;
+	margin-left: 44px;
+	height: 11px;
+	background: white;
+	margin-top: -40px;
+	border-radius: 20px;
+	transform: rotate(40deg);	
+}
+#reflect4{
+	border: 1px solid white;
+	width: 20px;
+	margin-left: 110px;
+	height: 11px;
+	background: white;
+	margin-top: -20px;
+	border-radius: 20px;
+	transform: rotate(40deg);	
+}

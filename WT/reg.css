@@ -1,0 +1,136 @@
+body{
+	background-image:url('D:/My Docs/BCA/SEM-V/wt/stock/70123552-background-with-geometric-forms-with-space-in-the-middle-useful-for-corporate-backgrounds-and-many-o.jpg');
+	background-size: cover;
+}
+#main{
+	display: block;
+	background-image:url('D:/My Docs/BCA/SEM-V/wt/stock/source (1).gif');
+	background-size: cover;
+	width: 35%;
+	height: 770px;
+	margin-top: 10px; 
+	box-shadow: 1px 10px 40px gray;
+	color: #f6ffff;
+	border-radius: 100px;
+}
+input[type=submit]{
+border-radius: 20px;
+height: 40px;
+width: 200px;
+border: none;
+background: linear-gradient(90deg, #000046, #1CB5E0, #1CB5E0, #000046);
+background-size: 400%;
+transition: .5s linear;
+font-family: Equestria;
+font-size: 25px;
+box-shadow: 1px 5px 40px black;
+animation: doit 8s linear infinite;
+}
+input[type=submit]:hover{
+cursor: wait;
+}
+@keyframes doit{
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;	
+	}
+
+}
+form{
+	color: #000000;
+	font-family: Montez;
+	font-size: 25px;
+	font-weight: bolder;
+}
+input[type=text],input[type=password]{
+border-radius: 5px;
+margin-top: 20px;
+transition: .5s ease-in;
+background-color: #ebf4f2;
+border: none;
+height: 30px; 
+color: gray;
+border-radius: 24px;
+text-align: center;
+border:2px solid #ffffff;
+outline: none;
+}
+input[type=text]:focus{
+	border-radius: 10px;
+	background-color: black;
+	transition: .5s ease-in;
+	width: 200px;
+}
+::placeholder{
+	font-family: Montez;
+	font-size: 25px;
+}
+input[type=password]:focus{
+	border-radius: 10px;
+	background-color: black;
+	transition: .5s ease-in;
+}
+select{
+	background-color: #ffffff;
+	color: #000000;
+	transition: .5s linear;
+	border-radius: 100px;
+	height: 30px;
+	outline: none;
+}
+select:hover{
+	background-color: #38474e;
+	transition: .5s linear;
+	color: #ffffff;
+}
+option{
+	background-color: #38474e;
+	color:#ffffff;
+}
+option:hover{
+	color: #000000;
+}
+#text h1{
+color: rgba(225, 225, 225, .1);
+font-family: BatmanForeverAlternate;
+font-size: 40px;
+text-transform: uppercase;
+font-weight: bold;
+background-image:url('D:/My Docs/BCA/SEM-V/wt/stock/GIFs/HERO.gif');
+-webkit-background-clip: text;
+background-position: 0;
+}
+input[type="checkbox"]{
+	position: relative;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	-webkit-appearance:none;
+	outline: none;
+	transition: .5s;
+}
+input[type="checkbox"]:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 4px solid #ffffff;
+	box-sizing: border-box;
+	transition: .5s;
+}
+input:checked[type="checkbox"]:before{
+	border-left: none;
+	border-top: none;
+	width: 20px;
+	border-color: #000000;
+	transform: rotate(45deg);
+}
+label{
+	font-size: 36px;
+}

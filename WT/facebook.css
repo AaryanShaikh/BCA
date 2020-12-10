@@ -1,0 +1,49 @@
+#main{
+	border: 1px solid transparent;
+	height: 200px;
+	width: 200px;
+	border-radius: 15px;
+	background: #3b569f;
+	animation: doit 3s linear infinite;
+}
+@keyframes doit{
+	0%{
+		border-radius: 15px;
+		background: #3b569f;
+	}
+	50%{
+		border-radius: 100px;
+		background: #2163ff;
+	}
+	100%{
+		border-radius: 15px;	
+	}
+}
+#letter{
+	font-family: Klavika Bold;
+	font-size: 230px;
+	margin-left: 80px;
+	font-weight: bold;
+	color: white;
+}
+#deleter{
+	border: 1px solid transparent;
+	height: 30px;
+	width: 20px;
+	margin-top: -174px;
+	margin-left: 153px;
+	background: #3b569f;
+	transform: rotate(10deg);
+	animation: change 3s linear infinite;
+}
+@keyframes change{
+	0%{
+		background: #3b569f;
+	}
+	50%{
+		background: #2362f7;
+	}
+	100%{
+		background: #3b569f;
+	}
+}

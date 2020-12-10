@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>website</title>
+	<link rel="stylesheet" type="text/css" href="web.css">
+</head>
+<body>
+	<script>
+		function show()
+		{
+			var pass=document.getElementById('pass');
+			if(document.getElementById('check').checked)
+			{
+				document.getElementById("d1").src="C:/wamp64/www/Cypher/wt/stock/regshow.png";
+				pass.setAttribute('type','text');
+			}
+			else
+			{
+				document.getElementById("d1").src="C:/wamp64/www/Cypher/wt/stock/regpass.png";
+				pass.setAttribute('type','password');
+			}
+		}	
+	</script>
+	<center>
+		<div id="main">
+			<img src="C:/wamp64/www/Cypher/wt/stock/normal.png" id="d1" height=200px width=200px>
+			<br>
+			<div id="text">
+				<h1>HI-Tech Bus ticket</h1>
+			</div>
+<form method="post" action="website.html">
+	<select>
+		<option>goa</option>
+		<option>biana</option>
+		<option>vasco</option>
+		<option>kerla</option>
+	</select>
+	<input type="text" name="source" placeholder="Source" oninput='document.getElementById("d1").src="C:/wamp64/www/Cypher/wt/stock/happy.png"' autocomplete="off"><br>
+	<select>
+		<option>goa</option>
+		<option>biana</option>
+		<option>vasco</option>
+		<option>kerla</option>
+	</select>
+	<input type="text" name="pass" id="pass" placeholder="Destination" oninput='document.getElementById("d1").src="C:/wamp64/www/Cypher/wt/stock/happy.png"' autocomplete="off"><br><br>
+	<input type="submit" name="">
+	<a href="next.html"><span id="button"></span><span id="button"></span><span id="button"></span><span id="button"></span>DETAILS</a>
+</form>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+	background: #333;
+}
+#main{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	letter-spacing: 10px;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+@keyframes doit{
+	0%{
+		filter: blur(0px);
+		transform: scale(1);
+		opacity: 1;
+	}
+	60%{
+		filter: blur(0px);
+		transform: scale(1);
+		opacity: 1;
+	}
+	80%{
+		filter: blur(20px);
+		transform: scale(2);
+		opacity: 0;
+	}
+	100%{
+		filter: blur(0px);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+#i{
+	animation: doit 3s linear infinite;
+}
+#ii{
+	animation: doit 3s linear infinite;
+	animation-delay: .2s;
+}
+#iii{
+	animation: doit 3s linear infinite;
+	animation-delay: .4s;
+}
+#iv{
+	animation: doit 3s linear infinite;
+	animation-delay: .6s;
+}
+#v{
+	animation: doit 3s linear infinite;
+	animation-delay: .8s;
+}
+#vi{
+	animation: doit 3s linear infinite;
+	animation-delay: 1s;
+}

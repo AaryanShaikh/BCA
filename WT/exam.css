@@ -1,0 +1,51 @@
+#body{
+	border: 1px solid black;
+	height: 450px;
+	background: black;
+	width: 250px;
+	border-top-left-radius: 150px;
+	border-top-right-radius: 150px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	margin-left: 100px;
+}
+#l-hand{
+	border: 1px solid black;
+	height: 250px;
+	width: 5px;
+	transform: rotate(-20deg);
+	border-radius: 50px;
+	margin-top: -320px;
+}
+#r-hand{
+	border: 1px solid black;
+	height: 250px;
+	width: 80px;
+	border-radius: 50px;
+	margin-top: -250px;
+	margin-left: 370px;
+}
+#l-eye{
+	border: 1px solid white;
+	height: 20px;
+	background: white;
+	width: 20px;
+	border-radius: 100%;
+	margin-top: -320px;
+	margin-left: 150px;
+}
+#r-eye{
+	border: 1px solid white;
+	background: white;
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	margin-top: -24px;
+	margin-left: 270px
+}
+#divider{
+	border: 1px solid transparent;
+	height: 10px;
+	margin-top: 30px;
+	background: white;
+}

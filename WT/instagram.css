@@ -1,0 +1,44 @@
+#main{
+	height: 200px;
+	width: 200px;
+	border-radius: 50px;
+	border: 1px solid transparent;
+	background: linear-gradient(45deg,#fcb045 10%,#fd1d1d 40%,#833ab4 80%);
+	background-size: 200%;
+	animation: doit 1s linear infinite;
+}
+@keyframes doit{
+	0%{
+		background-position: 0%;
+	}
+	50%{
+		background-position: 100%;
+	}
+	100%{
+		background-position: 0%;
+	}
+}
+#border{
+	border: 7px solid white;
+	height: 140px;
+	width: 140px;
+	border-radius: 45px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+#circle{
+	border: 7px solid white;
+	border-radius: 100%;
+	height: 70px;
+	width: 70px;
+	margin-top: -120px;
+	margin-left: 60px;
+}
+#dot{
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	margin-top: 10px;
+	margin-left: 110px;
+	background: white;
+}

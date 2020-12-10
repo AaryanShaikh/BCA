@@ -1,0 +1,68 @@
+body{
+	background: black;
+}
+#i{
+	border: 1px solid transparent;
+	height: 100px;
+	width: 50px;
+	box-shadow: 0 0 10px #333;
+	animation: doit 2s linear infinite;
+}
+@keyframes doit{
+	0%{
+		box-shadow: 0 0 10px black;
+		transform: scaleY(5) rotateY(180deg);
+	}
+	60%{
+		box-shadow: 0 0 10px black;
+	}
+	80%{
+		box-shadow: 0 0 10px aqua;
+	}
+	100%{
+		box-shadow: 0 0 10px black;
+	}
+}
+#center{
+	display: flex;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+#ii{
+	border: 1px solid transparent;
+	height: 100px;
+	width: 50px;
+	margin-left: 10px;
+	box-shadow: 0 0 10px #333;
+	animation: doit 2s linear infinite;
+	animation-delay: .4s;
+}
+#iii{
+	border: 1px solid transparent;
+	height: 100px;
+	width: 50px;
+	margin-left: 10px;
+	box-shadow: 0 0 10px #333;
+	animation: doit 2s linear infinite;
+	animation-delay: .6s;
+}
+#iv{
+	border: 1px solid transparent;
+	height: 100px;
+	width: 50px;
+	margin-left: 10px;
+	box-shadow: 0 0 10px #333;
+	animation: doit 2s linear infinite;
+	animation-delay: .8s;
+}
+#v{
+	border: 1px solid transparent;
+	height: 100px;
+	width: 50px;
+	margin-left: 10px;
+	box-shadow: 0 0 10px #333;
+	animation: doit 2s linear infinite;
+	animation-delay: 1s;
+}

@@ -1,0 +1,37 @@
+body{
+	background: linear-gradient(to left, #141e30, #243b55);
+}
+#flip{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	text-align: center;
+}
+/*#flip > #front to select all the child div with the id of #front*/
+#flip #front{
+	position: absolute;
+	transform: perspective(600px) rotateY(0deg);
+	background: linear-gradient(to left, #ff5f6d, #ffc371);
+	width: 200px;
+	height: 200px;
+	border-radius: 25%;
+	backface-visibility: hidden;/*can't see the back side turning around*/
+	transition: transform 1s ease-in-out;/*faster = smaller num(seconds)*/
+}
+#flip #back{
+	position: absolute;
+	transform: perspective(600px) rotateY(180deg);
+	background: #333; 
+	width: 200px;
+	height: 200px;
+	border-radius: 25%;
+	backface-visibility: hidden;
+	transition: transform 1s ease-in-out;
+	color: white;
+}
+#flip:hover #front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+#flip:hover #back{
+	transform: perspective(600px) rotateY(0deg);
+}

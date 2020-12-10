@@ -1,0 +1,102 @@
+#main{
+	border: 5px solid black;
+	border-radius: 25px;
+	width: 250px;
+	height: 500px;
+}
+#screen{
+	border: 5px solid black;
+	width: 200px;
+	height: 180px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+hr{
+	border: 1px solid black;
+	width: 100px;
+	height: 7px;
+	background: black;
+	border-radius: 20%;
+	margin-top: 20px;
+}
+#btn1{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: 30px;
+	margin-left: 10px;
+	border-radius: 25%; 
+}
+#btn2{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: 30px;
+	margin-left: 10px;
+	border-radius: 25%;
+}
+#btn3{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: 30px;
+	margin-left: 10px;
+	border-radius: 25%;
+}
+#btn4{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: -210px;
+	margin-left: 100px;
+	border-radius: 25%;
+}
+#btn5{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: 30px;
+	margin-left: 100px;
+	border-radius: 25%;
+}
+#btn6{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: 30px;
+	margin-left: 100px;
+	border-radius: 25%;
+}
+#btn7{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: -210px;
+	margin-left: 180px;
+	border-radius: 25%;
+}
+#btn8{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: 30px;
+	margin-left: 180px;
+	border-radius: 25%;
+}
+#btn9{
+	height: 40px;
+	width: 50px;
+	border: 5px solid black;
+	margin-top: 30px;
+	margin-left: 180px;
+	border-radius: 25%;
+}
+#antena{
+	border: 5px solid black;
+	height: 100px;
+	width: 30px;
+	margin-left: 20px;
+	border-top-left-radius: 45%;
+	border-top-right-radius: 45%;
+	margin-bottom: -5px;
+}

@@ -1,0 +1,27 @@
+body{
+	background: linear-gradient(90deg,#232526,#414345);
+}
+table{
+	height: 200px;
+	width: 200px;
+	border: 1px solid transparent;
+}
+td{
+	background: linear-gradient(90deg,#12c2e9,#c471ed,#f64f59,#f64f59,#c471ed,#12c2e9);
+	background-size: 400%;
+	animation: rotate 5s ease infinite;
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+		background-position: 0%;
+	}
+	50%{
+		transform: rotate(360deg);
+		background-position: 400%;
+	}
+	100%{
+		transform: rotate(0deg);
+		background-position: 0%;	
+	}
+}

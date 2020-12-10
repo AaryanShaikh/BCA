@@ -1,0 +1,42 @@
+body{
+	background: #333;
+	color: white;
+}
+#margin{
+	border: 1px solid transparent;
+	height: 100px;
+	width: 100%;
+}
+#textm{
+	transform: translateX(-90px);
+}
+#margin:hover #textm{
+	transform: translateX(0px);
+}
+#border{
+	border: 5px solid black;
+	margin-top: -60px;
+	height: 200px;
+}
+#textb{
+	transform: translateX(-90px);
+	margin: 0;
+}
+#border:hover #textb{
+	transform: translateX(0);
+}
+#padding{
+	border: 1px solid transparent;
+	height: 100px;
+	width: 100%;
+	margin-top: -180px;
+}
+#textp{
+	transform: translateX(-90px);
+}
+#padding:hover #textp{
+	transform: translateX(0);
+}
+#textc{
+	transform: translate(255px,-50px);
+}
