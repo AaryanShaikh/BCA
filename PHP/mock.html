@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mock exam</title>
+</head>
+<body>
+	<form method="post" action="mock.php">
+		<input type="button" name="plus" id="plus" value="+" onclick="add()">
+		<input type="button" name="minus" id="minus" value="-" onclick="sub()">
+		<!-- <input type="email" name="email" id="email" required placeholder="Email">
+		<input type="password" name="pass" id="pass" required placeholder="Password">
+		<input type="submit" value="validate"> -->
+	</form>
+	<p id="demo">0</p>
+	<script type="text/javascript">
+		var num = 0
+		function add() {
+			num++
+			document.getElementById("demo").innerHTML = num;
+			if (num>10) {
+				alert("reached limit")
+				num = 0
+				document.getElementById("demo").innerHTML = num;
+			}
+		}
+		function sub() {
+			num--;
+			document.getElementById("demo").innerHTML = num;
+		}
+	</script>
+</body>
+</html>
