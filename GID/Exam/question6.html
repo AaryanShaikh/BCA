@@ -1,0 +1,27 @@
+<html>
+<script>
+function check()
+{
+var n1=document.frm1.txtnat.value;
+var n2=document.frm1.txtage.value;
+if(isNaN(n2)||n1!="indian"||n2<18)
+{
+alert("Not eligible for voting");
+}
+else
+{
+alert("Eligible for voting");
+}
+}
+</script>
+<body>
+<h1>Enter the details</h1>
+<form name="frm1">
+Enter your Nationality:
+<input type="text" name="txtnat" size="20"><br><br>
+Enter your Age:
+<input type="text" name="txtage" size="2"><br><br>
+<input type="button" name="bsubmit" value="send details" onclick="check()">
+</form>
+</body>
+</html>

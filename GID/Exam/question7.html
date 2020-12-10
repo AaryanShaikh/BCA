@@ -1,0 +1,38 @@
+<html>
+<script>
+function cal()
+{
+var n1=document.q7.noc.value;
+var res;
+if(n1<=100)
+{
+res=1.0;
+document.q7.ta.value=res;
+}
+else if(n1>100&&n1<=200)
+{
+res=1.0+1.20;
+document.q7.ta.value=res;
+}
+else if(n1>200&&n1<=250)
+{
+res=1.0+1.20+1.50;
+document.q7.ta.value=res;
+}
+else
+{
+res=1.0+1.20+1.50+2.00;
+document.q7.ta.value=res;
+}
+}
+</script>
+<body>
+<form name=q7>
+<label for="noc">Number of Calls:
+<input type="number" name="noc"><br>
+<label for="ta">Total Amount:
+<input type="number" name="ta"><br>
+<input type="button" value="calculate" onclick="cal()">
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<script>
+function great()
+{
+var n1=document.q2.fno.value;
+var n2=document.q2.sno.value;
+if(Number(n1)>Number(n2))
+{
+document.q2.res.value=n1;
+}
+else
+{
+document.q2.res.value=n2;
+}
+}
+</script>
+<body>
+<form name=q2>
+<label for="fno">Enter the First number:
+<input type="number" name="fno"><br>
+<label for="sno">Enter the Second number:
+<input type="number" name="sno"><br>
+<label for="res">Result:
+<input type="number" name="res">
+<input type="button" value="greater" onclick="great()">
+</form>
+</body>
+</html>

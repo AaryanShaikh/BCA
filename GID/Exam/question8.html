@@ -1,0 +1,24 @@
+<html>
+<script>
+function check()
+{
+var n=document.q8.nm.value;
+if(document.q8.nm.value=="")
+{
+document.getElementById("d1").innerHTML="*Name Required";
+}
+else
+{
+document.getElementById("d2").innerHTML="Hello "+n;
+}
+}
+</script>
+<body>
+<form name=q8>
+Name:
+<input type="text" name="nm"><p id="d1"></p>
+<input type="button" value="submit" onclick="check()">
+<p id="d2"></p>
+</form>  
+</body>
+</html>
