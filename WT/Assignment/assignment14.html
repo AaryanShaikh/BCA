@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 14</title>
+</head>
+<body bgcolor="#333" text="white">
+	<img src="normal.png" alt="MISSING JPG" height="200px" id="d1" onclick="change()">
+	<input type="button" value="Click Me!" onclick="change()">
+	<script type="text/javascript">
+		var i=0
+		function change() {
+			switch(i) {
+				case 0:
+					document.getElementById("d1").src = "happy.png"
+					i++;
+					break;
+				case 1:
+					document.getElementById("d1").src = "pass.png"
+					i++;
+					break;
+				case 2:
+					document.getElementById("d1").src = "show.png"
+					i++;
+					break;
+				case 3:
+					document.getElementById("d1").src = "regnormal.png"
+					i++;
+					break;
+				default:
+					document.getElementById("d1").src = "normal.png"
+					i=0;
+					break;
+			}
+		}
+	</script>
+</body>
+</html>

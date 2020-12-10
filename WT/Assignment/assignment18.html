@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assgnment 18</title>
+</head>
+<body>
+	<input type="image" src="normal.png" alt="missing" height="100px" onclick="openNW()">
+	<script type="text/javascript">
+		var new1,new2,new3,new4,new5
+		function openNW(){
+			new1 = window.open("http://www.google.com","newWind","width=200,height=200,top=500")
+			new2 = window.open("http://www.google.com","newWind2","width=200,height=200,top=0")
+			new3 = window.open("http://www.google.com","newWind3","width=200,height=200,top=0,left=1100")
+			new4 = window.open("http://www.google.com","newWind4","width=200,height=200,top=500,left=1100")
+			new5 = window.open("http://www.google.com","newWind5","width=200,height=200,top=300,left=600")
+		}
+		window.onbeforeunload = function(){
+ 			new1.close()
+			new2.close()
+			new3.close()
+			new4.close()
+			new5.close()
+		}
+	</script>
+</body>
+</html>

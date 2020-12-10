@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assgnment 16</title>
+	<style type="text/css">
+		p{font-size: 100px;}#box{height: 100px;width: 100px;border:1px solid white;
+			margin-left: 100px;transition: .5s}
+	</style>
+</head>
+<body bgcolor="#333" text="white">
+	<p id="x" onmouseover="start()" onmouseout="stop()">0</p>
+	<script type="text/javascript">
+		var count = 0
+		var timer
+		function start() {
+			document.getElementById("x").innerHTML = count
+			count++
+			timer = setTimeout(start,100)
+		}
+		function stop() {
+			document.getElementById("x").innerHTML = count
+			clearTimeout(timer)
+		}
+	</script>
+</body>
+</html>

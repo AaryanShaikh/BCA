@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 17</title>
+</head>
+<body bgcolor="#333" color="white">
+	<input type="image" src="normal.png" value="click me!" onclick="openNW()" height="100px"><br>
+	<input type="button" value="Close" onclick="closeNW()">
+	<script type="text/javascript">
+		var main
+		function openNW(){
+			main = window.open("http://www.google.com")
+		}
+		function closeNW() {
+			main.close()
+		}
+	</script>
+</body>
+</html>

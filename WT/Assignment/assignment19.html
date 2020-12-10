@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 19</title>
+</head>
+<body onload="checkCookie()">
+	<p id="visit"></p>
+	<p id="lastv"></p>
+	<input type="button" value="delete" onclick="delCookie()">
+	<script type="text/javascript">
+		function createCookie(cookieName,cookieValue,daysToExpire)
+        {
+          var date = new Date();
+          var ldate = date.getFullYear()+'/'+(date.getMonth()+1)+'/'+date.getDate();
+          var ltime = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+          date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));//dd/hh/mm/ss/ms
+          document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toUTCString();
+          return "Last vistited Date: "+ldate+"<br>Last visited time"+ltime
+        }
+		function accessCookie(cookieName)
+        {
+          var name = cookieName + "=";//myCookie=
+          var allCookies = document.cookie.split(';');
+          for(var i=0; i<allCookies.length; i++)
+          {
+            var temp = allCookies[i].trim();
+            //testCookie->myCookie
+	            if (temp.indexOf(name)==0){
+	            	return temp.substring(name.length,temp.length);//e=aaryan->aaryan
+	            }
+       	  }
+        	return "";
+        }
+		function checkCookie()
+        {
+          var user = accessCookie("myCookie");
+          var num,last
+          if (user!=""){
+        	alert("You've already visited before");
+        	user++;
+        	document.getElementById("visit").innerHTML = "Number of Visits:"+user
+        	last = createCookie("myCookie", user, num)
+        	document.getElementById("lastv").innerHTML = last
+        	}
+          else
+          {
+          	user = 1
+            num = prompt("How many days you want to store your name on your computer?");
+            if (num!=null)
+            {
+            createCookie("myCookie", user, num);
+            }
+          }
+        }
+        function delCookie() {
+        	document.cookie = "myCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC;"
+        	document.getElementById("visit").innerHTML = "Number of Visits:"
+        	document.getElementById("lastv").innerHTML = "Last vistited Date:<br>Last visited time"
+        	alert("Cookie Deleted!")
+        }
+    </script>
+</body>
+</html>

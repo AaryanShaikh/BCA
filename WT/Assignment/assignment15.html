@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 15</title>
+</head>
+<body bgcolor="#333" text="white">
+	<img src="normal.png" alt="MISSING JPG" height="200px" id="d1" onclick="change()">
+	<input type="image" src="back.png" onclick="back()" height="50px">
+	<input type="image" src="next.png" onclick="next()" height="50px">
+	<script type="text/javascript">
+		let i=0
+		function next() {
+			if (i==0) {
+				document.getElementById("d1").src = "happy.png"
+				i++
+			} else if(i==1){
+				document.getElementById("d1").src = "show.png"
+				i++
+			}
+			else if (i==2) {
+				document.getElementById("d1").src = "pass.png"
+				i++
+			}
+			else{
+				document.getElementById("d1").src = "reghappy.png"
+			}
+		}
+		function back() {
+			if (i==3) {
+				document.getElementById("d1").src = "pass.png"
+				i--	
+			}
+			else if (i==2) {
+				document.getElementById("d1").src = "show.png"
+				i--	
+			}
+			else if (i==1) {
+				document.getElementById("d1").src = "happy.png"
+				i--	
+			}
+			else{
+				document.getElementById("d1").src = "normal.png"
+			}
+		}
+	</script>
+</body>
+</html>

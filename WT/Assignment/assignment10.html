@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 10</title>
+</head>
+<body bgcolor="#333" text="white">
+	<img src="normal.png" alt="MISSING JPG" height="200px" id="d1">
+	<img src="normal.png" alt="MISSING JPG" height="200px" id="d3">
+	<img src="normal.png" alt="MISSING JPG" height="200px" id="d4">
+	<img src="regnormal.png" alt="MISSING JPG" height="200px" onmouseover="happy()" onmouseout="normal()" id="d2">
+	<script type="text/javascript">
+		function happy() {
+			document.getElementById("d1").src = "happy.png"
+			document.getElementById("d3").src = "happy.png"
+			document.getElementById("d4").src = "happy.png"
+		}
+		function normal() {
+			document.getElementById("d1").src = "normal.png"
+			document.getElementById("d3").src = "normal.png"
+			document.getElementById("d4").src = "normal.png"
+		}
+	</script>
+</body>
+</html>
