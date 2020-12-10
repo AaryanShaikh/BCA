@@ -1,0 +1,72 @@
+body{
+	background: #333;
+}
+#center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+input[type="text"]{
+	-webkit-appearance: none;
+	background: none;
+	border: 5px dashed white;
+	height: 40px;
+	width: 300px;
+	border-top: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	outline: none;
+	font-size: 20px;
+	transition: .5s;
+	color: white;
+	text-align: center;
+	text-shadow: 3px 2px 3px black;
+}
+::placeholder{
+	color: white;
+	text-align: center;
+	transition: .5s;
+}
+input[type="text"]:focus{
+	-webkit-appearance: none;
+	background: none;
+	height: 40px;
+	width: 300px;
+	outline: none;
+	transition: .5s;
+	font-size: 20px;
+	animation: doit 5s infinite;	
+}
+@keyframes doit{
+	0%{
+		border: 5px dashed white;
+		border-top: 5px dashed white;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+	}
+	25%{
+		border: 5px dashed #c471ed;
+		border-top: 5px dashed #c471ed;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+	}
+	50%{
+		border: 5px dashed #f64f59;
+		border-top: 5px dashed #f64f59;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+	}
+	75%{
+		border: 5px dashed #12c2e9;
+		border-top: 5px dashed #12c2e9;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;	
+	}
+	100%{
+		border: 5px dashed white;
+		border-top: 5px dashed white;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;	
+	}
+}
