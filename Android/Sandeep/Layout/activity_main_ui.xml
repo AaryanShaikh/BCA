@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainUi">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/google1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/google"
+                android:layout_centerHorizontal="true"
+                android:text="Sandeepsashi@oksbi"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/google2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/google1"
+                android:layout_centerHorizontal="true"
+                android:text="9762663528"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/pay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pay"
+                android:layout_centerHorizontal="true"
+                android:text="8888682169"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/phone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_centerHorizontal="true"
+                android:text="9762663528@ybl"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/phone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone1"
+                android:layout_centerHorizontal="true"
+                android:text="9762663528"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/google1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/phonepe" />
+
+            <ImageView
+                android:id="@+id/pay"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/phone1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/paytm" />
+
+            <ImageView
+                android:id="@+id/google"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/tv1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/googlepay" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Payment Methods"
+                android:textSize="35sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
