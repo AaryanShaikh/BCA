@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fontFamily="cursive"
+        android:text="Android"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_margin="10dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Program"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/DarkSlateGray"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="Lets Rock!"
+        android:textColor="@color/cyan"
+        android:textStyle="italic|bold|normal" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/DarkSlateGray"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Reset"
+        android:textColor="@color/Gold"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@id/reset"
+        android:background="@color/DarkSlateGray"
+        android:text="+"
+        android:textColor="@color/Lime"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="340dp"
+        android:layout_toRightOf="@id/reset"
+        android:background="@color/DarkSlateGray"
+        android:text="-"
+        android:textColor="@color/Lime"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_toRightOf="@+id/button"
+        android:background="@color/DarkSlateGray"
+        android:text="check"
+        android:textColor="@color/LightSalmon"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_toLeftOf="@+id/button"
+        android:background="@color/DarkSlateGray"
+        android:text="Download"
+        android:textColor="@color/LightSalmon"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/res_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textSize="36sp" />
+
+</RelativeLayout>
